@@ -1,6 +1,7 @@
 import axios from 'axios'
-const baseUrl = 'https://phonebook-backend-sljo.onrender.com/api/persons'
+const baseUrl = '/api/persons'
 //'http://localhost:3001/api/persons'
+//'https://phonebook-backend-sljo.onrender.com/api/persons'
 const getAll = () => {
   const request = axios.get(baseUrl)
   return request.then(response => response.data)
