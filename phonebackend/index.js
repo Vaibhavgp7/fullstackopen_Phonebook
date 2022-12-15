@@ -40,7 +40,9 @@ let persons = [
       "number": "39-23-6423122"
     }
 ]
-
+app.get('/', (request,response)=>{
+  response.json("Hi, World!")
+})
 app.get('/api/persons', (request, response) => {
   response.json(persons)
 })
