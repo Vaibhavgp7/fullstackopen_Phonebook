@@ -1,3 +1,5 @@
 /phonebackend/.env
 /node_modules
 /phonefrontend/node_modules
+/phonebackend/node_modules
+node_modules

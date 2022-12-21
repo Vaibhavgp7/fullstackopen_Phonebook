@@ -45,8 +45,8 @@ const App = () => {
             }, 5000)
           })
           .catch((error) => {
-            console.log(error)
-            setPersons(persons.filter(person => person.name === newName))
+            console.log(error.response.data.error)
+            
             setNewName('')
             setNewNumber('')
             setMessage(
@@ -82,7 +82,7 @@ const App = () => {
       })
       .catch(error => {
         setMessage(
-          `[ERROR] ${error.response.data.message}`
+          `${error.response.data.error}`
         )
         setTimeout(() => {
           setMessage(null)
